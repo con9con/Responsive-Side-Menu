@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Responsive Side Menu</title>
+</head>
+<body>
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSideMenu()">
+        <svg width="25" height="30" class="menu-btn">
+          <path d="M0,5 25,5" stroke="#fff" stroke-width="3"/>
+          <path d="M0,14 25,14" stroke="#fff" stroke-width="3"/>
+          <path d="M0,23 25,23" stroke="#fff" stroke-width="3"/>
+        </svg>
+      </a>
+    </span>
+    <div class="topnav-right">
+      <ul class="navbar-nav">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div id="main">
+    <h1>Responsive Side Menu</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+
+  <script type="text/javascript">
+
+    function openSideMenu() {
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSideMenu() {
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+</body>
+</html>
